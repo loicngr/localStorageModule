@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <title>localStorage test module</title>
+</head>
+<body>
+  <h1>localStorage</h1>
+
+  <script type="module">
+    window.showLogs = true
+
+    import Storage from './Storage.mjs'
+    import { devLog } from './utils'
+
+    devLog('localStorage started : ' + Storage.exists())
+  </script>
+</body>
+</html>
